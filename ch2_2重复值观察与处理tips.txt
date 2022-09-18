@@ -1,0 +1,18 @@
+观察重复值：
+df.duplicated()返回true或者false
+	df.duplicated()的例子
+	df=pd.DataFrame([np.arange(1,5) for i in range(4)])
+	#    0  1  2  3
+	# 0  1  2  3  4
+	# 1  1  2  3  4
+	# 2  1  2  3  4
+	# 3  1  2  3  4
+	df.duplicated()
+	# 0    False 第一行不是重复值，后面的都是重复值
+	# 1     True
+	# 2     True
+	# 3     True
+	# dtype: bool
+
+删除重复值：
+df = df.drop_duplicates()

@@ -1,0 +1,5 @@
+分层抽样与随机数种子
+
+from sklearn.model_selection import train_test_split
+# 对数据集进行切割，而且按照y进行分层抽样，使得分类问题是比较平衡的，而且设置了随机数种子random_state
+X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=0)

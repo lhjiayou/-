@@ -1,0 +1,18 @@
+缺失值情况进行统计：
+使用info()函数来观察每列数据的数目以及数据类型
+使用isnull()来判断是不是缺失值，然后使用df.isnull().sum()来求和缺失值的数目
+
+
+缺失值进行处理：
+利用isnull来判断是不是缺失值，然后赋值即可
+或者dropna删除
+	DataFrame.dropna(axis=0, how='any', thresh=None, subset=None, inplace=False)
+	axis=0默认删除行，也就是样本，axis=1默认删除列，也就是特征
+	how一般是any即可，
+或者fillna填充
+	DataFrame.fillna(value=None, method=None, axis=None, inplace=False, limit=None, downcast=None)
+	value是填充的值
+	method是向前填充或者向后填充等等
+	axis也是按照行或者按照列进行填充
+
+

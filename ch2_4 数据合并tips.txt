@@ -1,0 +1,9 @@
+合并最方便的函数还是concat函数，通过制定axis=1就能实现左右的拼接，axis=0（默认）实现上下的拼接
+此外，还有join，merge函数，以及append函数
+
+#左右拼接
+A.join（B）=pd.concat([A,B],axis=1)
+pd.merge(A,B,left_index=True,right_index=True)=pd.concat([A,B],axis=1)
+
+#上下拼接
+A.append(B)=pd.concat([A,B]) 默认的axis=0

@@ -1,0 +1,11 @@
+from sklearn.metrics import classification_report
+print(classification_report(y_test, pred))
+结果为：
+              precision    recall  f1-score   support
+
+           0       0.80      0.93      0.86       137
+           1       0.84      0.63      0.72        86
+
+    accuracy                           0.81       223
+   macro avg       0.82      0.78      0.79       223
+weighted avg       0.82      0.81      0.80       223

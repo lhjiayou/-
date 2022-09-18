@@ -1,0 +1,27 @@
+matplotlib和sns绘图都还是很好看的
+链接：https://blog.csdn.net/weixin_44025103/article/details/124894507
+
+sns.countplot() 用于画类别特征的频数条形图。
+函数中的参数如图所示：
+
+sns.countplot(x=None, y=None, hue=None, data=None, order=None,
+hue_order=None, orient=None, color=None, palette=None,
+saturation=0.75, dodge=True, ax=None, **kwargs)
+
+参数说明：
+x： x轴上的条形图，以x标签划分统计个数
+
+y：y轴上的条形图，以y标签划分统计个数
+
+hue：在x或y标签划分的同时，再以hue标签划分统计个数 #也就是继续划分数据
+
+data：df或array或array列表，用于绘图的数据集，x或y缺失时，data参数为数据集，同时x或y不可缺少，必须要有其中一个
+
+order与 hue_order：分别是对x或y的字段排序，或是对hue的字段排序。排序的方式为列表
+
+orient：强制定向，v:竖直方向；h:水平方向
+
+palette：使用不同的调色板
+————————————————
+版权声明：本文为CSDN博主「波尔德」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_44025103/article/details/124894507
